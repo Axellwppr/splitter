@@ -73,12 +73,14 @@
                                         <v-spacer />
                                         <v-btn
                                             text
+                                            :disabled="!ready[index]"
                                             @click="process(el, 'listen')"
                                         >
                                             Listen
                                         </v-btn>
                                         <v-btn
                                             text
+                                            :disabled="!ready[index]"
                                             @click="process(el, 'download')"
                                         >
                                             Download
@@ -198,7 +200,7 @@
                     <v-card-text v-if="!player.src">
                         该片段尚未切割完成,请等待切割完成后再次点击按钮</v-card-text
                     >
-                    <v-card-text class="text-center" v-else>
+                    <v-card-text class="text-center px-1" v-else>
                         <audio
                             v-if="player.type == 'listen'"
                             :src="player.src"
