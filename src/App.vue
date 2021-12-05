@@ -247,6 +247,8 @@
 <script>
 const { createFFmpeg, fetchFile } = FFmpeg;
 const ffmpeg = createFFmpeg({
+    corePath: "https://cdn.jsdelivr.net/gh/AxellWppr/AssestsCDN@6729721d1c7b0ae075ea42718e548a52a4a28ed4/ffmpeg-audio-core/dist/ffmpeg-core.js"
+    // corePath: "https://cdn.jsdelivr.net/gh/AxellWppr/AssestsCDN@4071873a5d6b9fa4438a817990f1d2ff7dd745fc/ffmpeg-audio-core/dist/ffmpeg-core.js"
     // log: true,
 });
 import { create, all, pi } from "mathjs";
